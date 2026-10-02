@@ -3,25 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>English Basics</title>
-  <meta name="description" content="Official website for the English Basics learning app.">
+  <meta name="description" content="Official website for apps developed by Ziad Imad.">
+  <title>Ziad Imad Apps</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, #087cf5, #33d6d2); color: #17324d; }
-    main { max-width: 760px; margin: 0 auto; padding: 72px 24px; }
-    section { background: #fff; border-radius: 24px; padding: 40px; box-shadow: 0 18px 55px rgba(0,0,0,.18); }
-    h1 { color: #075bd1; font-size: 42px; margin-top: 0; }
-    p { line-height: 1.7; font-size: 18px; }
-    a { color: #075bd1; }
+    :root { color-scheme: light; --bg:#f4f7fb; --card:#fff; --text:#172033; --muted:#60708a; --accent:#315efb; --border:#dfe6f1; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    main { width:min(960px,calc(100% - 32px)); margin:0 auto; padding:64px 0; }
+    header { margin-bottom:36px; }
+    h1 { margin:0 0 8px; font-size:clamp(2rem,5vw,3.4rem); }
+    header p { margin:0; color:var(--muted); font-size:1.08rem; }
+    .apps { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+    article { background:var(--card); border:1px solid var(--border); border-radius:18px; padding:24px; box-shadow:0 10px 30px rgba(23,32,51,.06); }
+    h2 { margin:0 0 8px; font-size:1.35rem; }
+    article p { margin:0 0 18px; color:var(--muted); }
+    a { color:var(--accent); font-weight:650; text-decoration:none; }
+    a:hover, a:focus { text-decoration:underline; }
+    footer { margin-top:38px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); }
   </style>
 </head>
 <body>
   <main>
-    <section>
-      <h1>English Basics</h1>
-      <p>Learn English step by step with vocabulary practice, pronunciation, and quizzes for beginners.</p>
-      <p>Contact: <a href="mailto:ziadimad.android@gmail.com">ziadimad.android@gmail.com</a></p>
-      <p><a href="english-basics/privacy-policy.html">Privacy policy</a></p>
+    <header>
+      <h1>Ziad Imad Apps</h1>
+      <p>Official developer website for educational and puzzle apps available on Google Play.</p>
+    </header>
+
+    <section class="apps" aria-label="Applications">
+      <article>
+        <h2>English Basics</h2>
+        <p>Learn English step by step with vocabulary practice, pronunciation, and quizzes.</p>
+        <a href="/english-basics/privacy-policy.html">Privacy policy</a>
+      </article>
+
+      <article>
+        <h2>Slide Quest</h2>
+        <p>An offline sliding-picture puzzle game with simple controls and relaxing challenges.</p>
+        <a href="/slide-quest/privacy-policy.html">Privacy policy</a>
+      </article>
+
+      <article>
+        <h2>كلمات متقاطعة</h2>
+        <p>لعبة كلمات متقاطعة عربية لاختبار المعلومات وتنشيط الذاكرة.</p>
+        <a href="/arabic-crossword/privacy-policy.html">سياسة الخصوصية</a>
+      </article>
     </section>
+
+    <footer>
+      Contact: <a href="mailto:ziadimad.android@gmail.com">ziadimad.android@gmail.com</a>
+    </footer>
   </main>
 </body>
 </html>
